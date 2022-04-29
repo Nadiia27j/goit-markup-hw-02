@@ -23,19 +23,27 @@ ul {
   list-style: none;
   
 }
+/* логотип */
 
 .logo {
   font-family: Raleway;
   font-size: 26px;
   text-decoration: none;
-  color: rgba(0, 0, 0, 1);
+  color: var(--bg-buttons-color-hover);
+  line-height: 1,19;
+  weight: 700
+
 }
 
 
 .accent-logo {
-  color: var(--bg-buttons-color-hover)
+  color: var(--maim-text-color);
+  line-height: 1,19;
 
 }
+
+
+/* навігація по сайту */
 
 .site-nav {
   color: var(--maim-text-color);
@@ -44,7 +52,10 @@ ul {
 
 .site-nav-link {
   text-decoration: none;
+  color: var(--maim-text-color);
+  line-height: 1,14;
 }
+
 .site-nav-link:hover,
 .site-nav-link:focus {
   color:var(--bg-buttons-color-hover);
@@ -56,31 +67,136 @@ ul {
 .link {
   color: var(--secondary-text-color);
   text-decoration: none;
+  line-height: 1,14;
 }
 
 .link:hover, 
 link:focus {
   color: var(--bg-buttons-color-hover);
- }
+}
+
+/* секція герой */
 
 .hero {
   background-color: var(--footer-bg-color);
   color:var(--bg-color);
   font-size: 44px;
- letter-spacing: 6%;
-  
+  line-height: 1,36;
+   
 }
+
+
+
+
+/* кнопки */
+
 
 .button-hero:hover,
 .button-hero:focus{
   background-color: var(--bg-buttons-color-hover);
   color: var(--bg-color);
- 
+  line-height: 1,87;
+ cursor: pointer;
 }
+
+.section-button {
+  line-height: 1,62;
+  Font size: 16px
+
+}
+
 
 .section-button:hover,
 .section-button:focus {
   background-color: var(--bg-buttons-color-hover);
   color: var(--bg-color);
+  cursor: pointer;
 }
 
+/* секція два */
+
+.subtitle {
+  line-height: 1,14;
+}
+
+.text {
+  color: var(--secondary-text-color);
+  line-height: 1,71;
+}
+
+/* чим ми займаємось */
+
+
+.title {
+  Font size: 36px;
+  Line height: 1,16;
+}
+
+/* наша команда */
+
+.subject {
+  Font size: 16px;
+  Line height: 1,18;
+  
+}
+
+.content {
+  Font size: 16px;
+  color: var(--secondary-text-color);
+  Line height: 1,18;
+}
+
+/* портфоліо */
+
+.heading-link {
+  text-decoration: none;
+}
+
+.headline {
+  font-size:18;
+  color: var(--maim-text-color);
+  Line height: 2;
+  
+
+}
+
+.section-content {
+  Font size: 16px;
+  color: var(--secondary-text-color);
+  Line height: 1,87;
+ 
+}
+
+
+.link-accent {
+  color: var(--bg-color);
+  font-family: roboto, sans-serif;
+  text-decoration: none;
+  Line height: 1,71;
+
+}
+
+.link-accent:hover,
+.link-accent:focus {
+  color: var(--bg-buttons-color-hover);
+}
+
+
+/* підвал */
+.footer {
+  background-color: var(--footer-bg-color);
+}
+
+.logo-footer {
+  color: var(--bg-color);
+}
+
+.link-footer {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  Line height: 1,71;
+}
+.link-footer:hover,
+.link-footer:focus {
+  color: var(--bg-buttons-color-hover);
+}
