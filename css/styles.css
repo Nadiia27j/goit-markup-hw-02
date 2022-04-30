@@ -26,19 +26,20 @@ ul {
 /* логотип */
 
 .logo {
-  font-family: Raleway;
+  font-family: Raleway, sans-serif;
   font-size: 26px;
   text-decoration: none;
   color: var(--bg-buttons-color-hover);
-  line-height: 1,19;
-  weight: 700
+  line-height: 1.19;
+  font-weight: 700;
 
 }
 
 
 .accent-logo {
   color: var(--maim-text-color);
-  line-height: 1,19;
+  line-height: 1.19;
+  font-weight: 700;
 
 }
 
@@ -53,7 +54,8 @@ ul {
 .site-nav-link {
   text-decoration: none;
   color: var(--maim-text-color);
-  line-height: 1,14;
+  line-height: 1.14;
+  font-weight: 500;
 }
 
 .site-nav-link:hover,
@@ -64,14 +66,24 @@ ul {
 }
 
 
+.carent {
+  text-decoration: none;
+}
+
+.carent-heading {
+  background-color: var(--bg-buttons-color-hover);
+  color: var(--bg-color);
+}
+
+
 .link {
   color: var(--secondary-text-color);
   text-decoration: none;
-  line-height: 1,14;
+  line-height: 1.14;
 }
 
 .link:hover, 
-link:focus {
+.link:focus {
   color: var(--bg-buttons-color-hover);
 }
 
@@ -80,29 +92,44 @@ link:focus {
 .hero {
   background-color: var(--footer-bg-color);
   color:var(--bg-color);
-  font-size: 44px;
-  line-height: 1,36;
-   
+  
 }
 
-
+.hero-title {
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+}
 
 
 /* кнопки */
 
+.button-hero {
+  line-height: 1.87;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--bg-color);
+  background-color: var(--bg-buttons-color-hover);
+}
+
 
 .button-hero:hover,
 .button-hero:focus{
-  background-color: var(--bg-buttons-color-hover);
+  background-color: rgba(24, 140, 232, 1);
   color: var(--bg-color);
-  line-height: 1,87;
- cursor: pointer;
+  
 }
 
 .section-button {
-  line-height: 1,62;
-  Font size: 16px
+  line-height: 1.62;
+  font-size: 16px;
+  font-weight: 500;
 
+}
+.carent {
+
+  color: var(--bg-buttons-color-hover)
 }
 
 
@@ -116,34 +143,41 @@ link:focus {
 /* секція два */
 
 .subtitle {
-  line-height: 1,14;
+  line-height: 1.14;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .text {
   color: var(--secondary-text-color);
-  line-height: 1,71;
+  line-height: 1.71;
+  font-weight: 400;
 }
 
 /* чим ми займаємось */
 
 
-.title {
-  Font size: 36px;
-  Line height: 1,16;
+.title{
+  font-size: 36px;
+  line-height: 1.16;
+  font-weight: 700;
+  
 }
 
 /* наша команда */
 
 .subject {
-  Font size: 16px;
-  Line height: 1,18;
+  font-size: 16px;
+  line-height: 1.18;
+  font-weight: 500;
   
 }
 
 .content {
-  Font size: 16px;
+  font-size: 16px;
   color: var(--secondary-text-color);
-  Line height: 1,18;
+  line-height: 1.18;
+  font-weight: 400;
 }
 
 /* портфоліо */
@@ -153,18 +187,19 @@ link:focus {
 }
 
 .headline {
-  font-size:18;
+  font-size: 18px;
   color: var(--maim-text-color);
-  Line height: 2;
+  line-height: 2;
+  font-weight: 700;
   
 
 }
 
 .section-content {
-  Font size: 16px;
+  font-size: 16px;
   color: var(--secondary-text-color);
-  Line height: 1,87;
- 
+  line-height: 1.87;
+ font-weight: 400;
 }
 
 
@@ -172,7 +207,10 @@ link:focus {
   color: var(--bg-color);
   font-family: roboto, sans-serif;
   text-decoration: none;
-  Line height: 1,71;
+  line-height: 1.71;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
 
 }
 
@@ -185,16 +223,22 @@ link:focus {
 /* підвал */
 .footer {
   background-color: var(--footer-bg-color);
+  
+  
 }
 
 .logo-footer {
   color: var(--bg-color);
+  
 }
 
 .link-footer {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-  Line height: 1,71;
+  line-height: 1.71;
+  font-weight: 400;
+  font-size: 14px;
+  font-style: normal;
 }
 .link-footer:hover,
 .link-footer:focus {
