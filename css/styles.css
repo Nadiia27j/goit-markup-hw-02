@@ -74,7 +74,10 @@ ul {
   background-color: var(--bg-buttons-color-hover);
   color: var(--bg-color);
 }
-
+  
+.contacts {
+  font-weight: 500;
+}
 
 .link {
   color: var(--secondary-text-color);
