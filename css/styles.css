@@ -80,6 +80,8 @@ ul {
   color: var(--secondary-text-color);
   text-decoration: none;
   line-height: 1.14;
+  font-weight: 500;
+
 }
 
 .link:hover, 
@@ -111,13 +113,19 @@ ul {
   font-weight: 700;
   color: var(--bg-color);
   background-color: var(--bg-buttons-color-hover);
+  font-family: inherit;
+
 }
 
+.button-accent {
+  text-transform: capitalize;
+}
 
 .button-hero:hover,
 .button-hero:focus{
   background-color: rgba(24, 140, 232, 1);
   color: var(--bg-color);
+  font-weight: 500;
   
 }
 
@@ -125,8 +133,9 @@ ul {
   line-height: 1.62;
   font-size: 16px;
   font-weight: 500;
-
+  
 }
+
 .carent {
 
   color: var(--bg-buttons-color-hover)
@@ -138,6 +147,7 @@ ul {
   background-color: var(--bg-buttons-color-hover);
   color: var(--bg-color);
   cursor: pointer;
+  font-weight: 500;
 }
 
 /* секція два */
@@ -146,6 +156,7 @@ ul {
   line-height: 1.14;
   font-weight: 700;
   text-transform: uppercase;
+  font-size: 14px;
 }
 
 .text {
