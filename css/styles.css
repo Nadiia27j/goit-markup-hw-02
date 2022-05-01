@@ -125,9 +125,14 @@ ul {
 .button-hero:focus{
   background-color: rgba(24, 140, 232, 1);
   color: var(--bg-color);
-  font-weight: 500;
+  font-weight: 700;
   
 }
+ 
+.secondary-button {
+  font-weight: 500;
+}
+
 
 .section-button {
   line-height: 1.62;
