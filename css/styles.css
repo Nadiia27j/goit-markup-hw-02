@@ -25,6 +25,12 @@ ul {
 }
 /* логотип */
 
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
   font-family: Raleway, sans-serif;
   font-size: 26px;
@@ -47,11 +53,24 @@ ul {
 /* навігація по сайту */
 
 .site-nav {
+ display: flex;
+ 
   color: var(--maim-text-color);
   
 }
 
+
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+
+}
+
 .site-nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   text-decoration: none;
   color: var(--maim-text-color);
   line-height: 1.14;
@@ -76,14 +95,24 @@ ul {
 }
   
 .contacts {
+  display: flex;
   font-weight: 500;
 }
 
+.contacts .item + .item {
+  margin-left: 50px;
+}
+
 .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--secondary-text-color);
   text-decoration: none;
   line-height: 1.14;
   font-weight: 500;
+
 
 }
 
