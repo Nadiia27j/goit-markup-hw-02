@@ -6,7 +6,7 @@
   --bg-color: rgba(255, 255, 255, 1);
   --bg-buttons-color-hover: rgba(33, 150, 243, 1);
   --footer-bg-color: rgba(47, 48, 58, 1);
-
+  --color-section: rgba(245, 244, 250, 1);
 }
 
 
@@ -17,6 +17,29 @@ body {
   font-size: 14px;
   
 }
+ 
+h1,h2,h3,h4,h5,h6,p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.title-photo {
+  margin: 0px;
+}
+
+ 
+.container {
+  outline: 1px solid red;
+  width: 1200px;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
 
 
 ul {
@@ -39,6 +62,9 @@ ul {
   line-height: 1.19;
   font-weight: 700;
 
+  margin-right: 93px;
+  
+
 }
 
 
@@ -54,9 +80,9 @@ ul {
 
 .site-nav {
  display: flex;
- 
   color: var(--maim-text-color);
-  
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 
@@ -64,6 +90,9 @@ ul {
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 
+}
+.contacts .item:last-child {
+  margin-left: 48px;
 }
 
 .site-nav-link {
@@ -97,6 +126,8 @@ ul {
 .contacts {
   display: flex;
   font-weight: 500;
+
+  margin-left: auto;
 }
 
 .contacts .item + .item {
@@ -189,6 +220,12 @@ ul {
 
 /* секція два */
 
+.benefits {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
 .subtitle {
   line-height: 1.14;
   font-weight: 700;
@@ -202,8 +239,13 @@ ul {
   font-weight: 400;
 }
 
-/* чим ми займаємось */
+/* чим ми займаємось */ 
 
+.img {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
 
 .title{
   font-size: 36px;
@@ -213,6 +255,17 @@ ul {
 }
 
 /* наша команда */
+
+.team {
+ background-color: var(--color-section)
+ 
+}
+
+.our-team {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
 
 .subject {
   font-size: 16px;
@@ -229,6 +282,19 @@ ul {
 }
 
 /* портфоліо */
+
+
+.btn {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+.portfolio {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
 
 .heading-link {
   text-decoration: none;
@@ -271,13 +337,17 @@ ul {
 /* підвал */
 .footer {
   background-color: var(--footer-bg-color);
-  
-  
 }
 
 .logo-footer {
   color: var(--bg-color);
   
+}
+
+.footer-container {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
 }
 
 .link-footer {
