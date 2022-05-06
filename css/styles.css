@@ -23,9 +23,7 @@ h1,h2,h3,h4,h5,h6,p {
   margin-bottom: 0px;
 }
 
-.title-photo {
-  margin: 0px;
-}
+
 
  
 .container {
@@ -54,15 +52,18 @@ ul {
   align-items: center;
 }
 
-.logo {
+.logo-header {
   font-family: Raleway, sans-serif;
   font-size: 26px;
   text-decoration: none;
   color: var(--bg-buttons-color-hover);
   line-height: 1.19;
   font-weight: 700;
+  
 
   margin-right: 93px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   
 
 }
@@ -128,6 +129,9 @@ ul {
   font-weight: 500;
 
   margin-left: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-left: 0px;
 }
 
 .contacts .item + .item {
@@ -155,8 +159,13 @@ ul {
 /* секція герой */
 
 .hero {
+  
   background-color: var(--footer-bg-color);
   color:var(--bg-color);
+  text-align: center;
+
+  padding-top: 200px;
+  padding-bottom: 200px;
   
 }
 
@@ -164,6 +173,8 @@ ul {
   font-size: 44px;
   font-weight: 900;
   line-height: 1.36;
+
+  margin-bottom: 30px;
 }
 
 
@@ -177,11 +188,15 @@ ul {
   color: var(--bg-color);
   background-color: var(--bg-buttons-color-hover);
   font-family: inherit;
+  border-radius: 4px;
+  
+  padding: 10px 32px;
 
 }
 
 .button-accent {
   text-transform: capitalize;
+  
 }
 
 .button-hero:hover,
@@ -192,8 +207,28 @@ ul {
   
 }
  
+
+.portfolio .btn {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.portfolio .btn-secondary {
+  margin-right: 8px;
+}
+
+.portfolio .btn-secondary:last-child {
+  margin-right: 0px;
+}
+
 .secondary-button {
   font-weight: 500;
+}
+
+.btn {
+  padding-top: 94px;
+   padding-bottom: 56px;
 }
 
 
@@ -201,6 +236,9 @@ ul {
   line-height: 1.62;
   font-size: 16px;
   font-weight: 500;
+
+  padding: 6px 22px;
+  border-radius: 4px;
   
 }
 
@@ -220,17 +258,33 @@ ul {
 
 /* секція два */
 
+.section-benefits {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+
 .benefits {
+  display: flex;
+ 
+
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
 }
 
+.benefits-title:not(:last-child) {
+  padding-right: 30px;
+}
+
+
+
 .subtitle {
   line-height: 1.14;
   font-weight: 700;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 14px; 
+  padding-bottom: 10px;
 }
 
 .text {
@@ -242,36 +296,67 @@ ul {
 /* чим ми займаємось */ 
 
 .img {
+  display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
+  padding-bottom: 94px;
+}
+
+.title-photo:not(:last-child) {
+  padding-right: 30px;
 }
 
 .title{
   font-size: 36px;
   line-height: 1.16;
   font-weight: 700;
-  
+
+  padding-bottom: 50px;
+  padding-top: 94px;
+ text-align: center;
+
 }
 
 /* наша команда */
 
+.photo {
+  padding-bottom: 30px;
+}
+
 .team {
- background-color: var(--color-section)
- 
+ background-color: var(--color-section);
+ padding-bottom: 94px;
 }
 
 .our-team {
+  display: flex;
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
 }
 
+
+
+.team-item:not(:last-child) {
+  padding-right: 30px;
+}
+
+
+
+.subject-content {
+  background-color: var(--bg-color);
+  
+}
+
+
 .subject {
   font-size: 16px;
   line-height: 1.18;
   font-weight: 500;
+  text-align: center;
   
+  padding-bottom: 10px;
 }
 
 .content {
@@ -279,6 +364,8 @@ ul {
   color: var(--secondary-text-color);
   line-height: 1.18;
   font-weight: 400;
+  text-align: center;
+  padding-bottom: 30px;
 }
 
 /* портфоліо */
@@ -296,6 +383,15 @@ ul {
   padding-left: 0px;
 }
 
+.section-portfolio {
+  border: 1px solid rgba(238, 238, 238, 1)
+}
+
+.photo-portfolio {
+  padding-bottom: 20px;
+}
+
+
 .heading-link {
   text-decoration: none;
 }
@@ -305,6 +401,7 @@ ul {
   color: var(--maim-text-color);
   line-height: 2;
   font-weight: 700;
+  padding-bottom: 4px;
   
 
 }
@@ -314,6 +411,7 @@ ul {
   color: var(--secondary-text-color);
   line-height: 1.87;
  font-weight: 400;
+ padding-bottom: 20px;
 }
 
 
@@ -325,18 +423,21 @@ ul {
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
-
+ padding-bottom: 9px;
 }
 
 .link-accent:hover,
 .link-accent:focus {
-  color: var(--bg-buttons-color-hover);
+  color: var(--bg-buttons-color-hover)
+
 }
 
 
 /* підвал */
 .footer {
   background-color: var(--footer-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -344,10 +445,28 @@ ul {
   
 }
 
+.footer-logo {
+  display: inline-block;
+  font-family: Raleway, sans-serif;
+  font-size: 26px;
+  text-decoration: none;
+  color: var(--bg-buttons-color-hover);
+  line-height: 1.19;
+  font-weight: 700;
+  
+  padding-bottom: 20px;
+}
+
+
 .footer-container {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
+  
+}
+
+.footer-container .mail {
+  padding-bottom: 9px;
 }
 
 .link-footer {
@@ -357,7 +476,11 @@ ul {
   font-weight: 400;
   font-size: 14px;
   font-style: normal;
+  
 }
+
+
+
 .link-footer:hover,
 .link-footer:focus {
   color: var(--bg-buttons-color-hover);
