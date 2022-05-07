@@ -50,6 +50,8 @@ ul {
 .main-nav {
   display: flex;
   align-items: center;
+
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 .logo-header {
@@ -84,6 +86,7 @@ ul {
   color: var(--maim-text-color);
   margin-top: 0;
   margin-bottom: 0;
+  padding-left: 0;
 }
 
 
@@ -208,39 +211,7 @@ ul {
 }
  
 
-.portfolio .btn {
-display: flex;
-align-items: center;
-justify-content: center;
-}
 
-.portfolio .btn-secondary {
-  margin-right: 8px;
-}
-
-.portfolio .btn-secondary:last-child {
-  margin-right: 0px;
-}
-
-.secondary-button {
-  font-weight: 500;
-}
-
-.btn {
-  padding-top: 94px;
-   padding-bottom: 56px;
-}
-
-
-.section-button {
-  line-height: 1.62;
-  font-size: 16px;
-  font-weight: 500;
-
-  padding: 6px 22px;
-  border-radius: 4px;
-  
-}
 
 .carent {
 
@@ -248,13 +219,8 @@ justify-content: center;
 }
 
 
-.section-button:hover,
-.section-button:focus {
-  background-color: var(--bg-buttons-color-hover);
-  color: var(--bg-color);
-  cursor: pointer;
-  font-weight: 500;
-}
+
+
 
 /* секція два */
 
@@ -370,26 +336,88 @@ justify-content: center;
 
 /* портфоліо */
 
+.section-button:hover,
+.section-button:focus {
+  background-color: var(--bg-buttons-color-hover);
+  color: var(--bg-color);
+  cursor: pointer;
+  font-weight: 500;
+}
 
+.portfolio .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+.portfolio .btn-secondary {
+  margin-right: 8px;
+}
+  
+.portfolio .btn-secondary:last-child {
+  margin-right: 0px;
+}
+  
+.secondary-button {
+  font-weight: 500;
+}
+  
+.btn {
+  padding-top: 94px;
+  padding-bottom: 56px;
+}
+  
+  
 .btn {
   margin-top: 0px;
   margin-bottom: 0px;
   padding-left: 0px;
 }
 
-.portfolio {
+.section-button {
+  line-height: 1.62;
+  font-size: 16px;
+  font-weight: 500;
+  
+  padding: 6px 22px;
+  border-radius: 4px;
+    
+}
+
+
+
+
+.portfolio-item {
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 0px;
-  margin-bottom: 0px;
-  padding-left: 0px;
+ margin-bottom: 0px;
+ padding-bottom: 94px;
+ padding-left: 0px;
 }
 
-.section-portfolio {
-  border: 1px solid rgba(238, 238, 238, 1)
+.portfolio-item .item {
+  margin-right: 30px;
+  flex-basis: calc((100%/370px)/3);
 }
 
-.photo-portfolio {
-  padding-bottom: 20px;
+.portfolio-item .item:nth-child(3n) {
+  margin-right: 0;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .heading-link {
@@ -401,7 +429,7 @@ justify-content: center;
   color: var(--maim-text-color);
   line-height: 2;
   font-weight: 700;
-  padding-bottom: 4px;
+  
   
 
 }
@@ -411,7 +439,7 @@ justify-content: center;
   color: var(--secondary-text-color);
   line-height: 1.87;
  font-weight: 400;
- padding-bottom: 20px;
+ 
 }
 
 
